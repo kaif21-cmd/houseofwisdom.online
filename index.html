@@ -22,11 +22,12 @@
 	</script>
 </head>
 
+
 <body>
 	<!-- Navigation Bar -->
 	<header id="header">
 		<nav>
-			<div class="logo"><img src="images/icon/‎logo.png" alt="logo"></div>
+			<div class="logo"><img src="images/icon/‎logo.png" alt="logo" style="text-align: left;"></div>
 			<ul>
 				<li><a class="active" href="">Home</a></li>
 				<li><a href="#services_section">Services</a></li>
@@ -96,9 +97,24 @@
 
 
 	<!-- Some Popular Subjects -->
-	<div class="title">
-		<span>EXPLORE OUR COURSES</span>
-	</div>
+	<style>
+		.title {
+		  text-align: center;
+		  padding: 20px;
+		  font-size: 2em;
+		}
+	  
+		@media screen and (max-width: 768px) {
+		  .title {
+			font-size: 1.5em;
+		  }
+		}
+	  </style>
+	  
+	  <div class="title">
+		<h>EXPLORE OUR COURSES</h>
+	  </div>
+	  
 	<br><br>
 	<div class="course">
 		<center>
@@ -120,21 +136,31 @@
 
 	<!-- ABOUT -->
 	<div class="diffSection" id="about_section">
-		<p style="font-size: 50px; padding: 100px">Learn key ideas through<br>problem-solving</p>
+		<br>
+		<p style="text-align:center; font-size:1.5rem;">Learn key ideas through<br>problem-solving</p>
+		<style>
+			@media screen and (max-width: 768px) {
+			  p {
+				font-size: 30px; /* Adjust the font size for smaller screens */
+				padding: 20px; /* Adjust the padding for smaller screens */
+			  }
+			}
+		  </style>
 		<div class="about-content">
 			<div class="side-image">
 				<img class="sideImage"
-					src="images/extra/Natural Social Media Webinar Livestream Promotion Computer Mockup Instagram Post.gif"
-					style="width: 700px;">
-			</div>
+				  src="images/extra/Natural Social Media Webinar Livestream Promotion Computer Mockup Instagram Post.gif"
+				  style="max-width: 100%; height: auto;">
+			  </div>
+			  
 			<div class="side-text">
 				<h2>Visual Aids: A Key to STEM Success</h2>
-				<p>1.Improved Conceptual Understanding: Visual aids such as images, graphs, and diagrams clarify complex
-					STEM concepts, making them easier to understand and retain.</p>
-				<p>2.Enhanced Engagement and Problem-Solving: Interactive visually appealing visual aids engage learners
+				<p style="text-align:center; font-size:15px;"><b>1.</b>Improved Conceptual Understanding: Visual aids such as images, graphs, and diagrams clarify complex
+					STEM concepts, making them easier to understand and retain.</p><hr>
+				<p style="text-align:center; font-size:15px;"><b>2.</b>Enhanced Engagement and Problem-Solving: Interactive visually appealing visual aids engage learners
 					and simplify problems, promoting effective problem-solving and a deeper understanding of STEM
-					concepts.</p>
-				<p>3.Effective Communication and Retention: A clear and visually appealing representation of information
+					concepts.</p><hr>
+				<p style="text-align:center; font-size:15px;"><b>3.</b>Effective Communication and Retention: A clear and visually appealing representation of information
 					improves communication and helps learners retain information, ensuring a more comprehensive and
 					lasting understanding of STEM concepts.</p>
 			</div>
@@ -145,87 +171,122 @@
 	<br>
 
 	<!-- SERVICES -->
-	<div class="service-swipe">
-		<div class="diffSection" id="services_section">
-			<center>
-				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
-			</center>
-		</div>
-		<a href="subjects/computer_courses.html">
-			<div class="s-card"><img src="images/icon/computer-courses.png">
-				<p>Worlds First Interactive Library</p>
-			</div>
-		</a>
-		<a href="subjects/jee.html">
-			<div class="s-card"><img src="images/icon/brainbooster.png">
-				<p>Building Concepts for Competitive Exams</p>
-			</div>
-		</a>
-		<a href="#">
-			<div class="s-card"><img src="images/icon/online-tutorials.png">
-				<p>Online Video Lectures</p>
-			</div>
-		</a>
-		<a href="subjects/jee.html#sample_papers">
-			<div class="s-card"><img src="images/icon/papers.jpg">
-				<p>Certification Courses</p>
-			</div>
-		</a>
-		<!-- <a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>Performance and Ranking Report</p></div></a> -->
-		<!-- <a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors & Mentors</p></div></a> -->
-		<a href="subjects/quiz.html">
-			<div class="s-card"><img src="images/icon/q1.png">
-				<p>Daily Brain Teasing Questions to Improve IQ</p>
-			</div>
-		</a>
-		<!-- <a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>24x7 Online Support</p></div></a> -->
-	</div>
+	<style>
+  .service-swipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .s-card {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .s-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 768px) {
+    .service-swipe {
+      padding: 20px;
+    }
+
+    .s-card {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="service-swipe">
+  <div class="diffSection" id="services_section">
+    <center>
+      <p style="font-size: 2em; padding: 20px; padding-bottom: 10px; color: #fff;">Services</p>
+    </center>
+  </div>
+
+  <a href="subjects/computer_courses.html" class="s-card">
+    <img src="images/icon/computer-courses.png" alt="Computer Courses">
+    <p>World's First Interactive Library</p>
+  </a>
+
+  <a href="subjects/jee.html" class="s-card">
+    <img src="images/icon/brainbooster.png" alt="Building Concepts for Competitive Exams">
+    <p>Building Concepts for Competitive Exams</p>
+  </a>
+
+  <a href="#" class="s-card">
+    <img src="images/icon/online-tutorials.png" alt="Online Video Lectures">
+    <p>Online Video Lectures</p>
+  </a>
+
+  <a href="subjects/jee.html#sample_papers" class="s-card">
+    <img src="images/icon/papers.jpg" alt="Certification Courses">
+    <p>Certification Courses</p>
+  </a>
+
+  <a href="subjects/quiz.html" class="s-card">
+    <img src="images/icon/q1.png" alt="Daily Brain Teasing Questions to Improve IQ">
+    <p>Daily Brain Teasing Questions to Improve IQ</p>
+  </a>
+</div>
+
 
 	<!-- PORTFOLIO    about -->
-	<div class="diffSection" id="portfolio_section">
-		<center>
-			<p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">About Us</p>
-		</center>
-		<div class="content">
-			<p>
-				This initiative, led by the students of Jamia Hamdard, aims to enhance the education system. Making
-				contributions to society involves enabling individuals of all ages to comprehend and visualize concepts
-				effectively. Our overarching objective is to empower students to achieve their full potential. To
-				accomplish this, we must wholeheartedly embrace the idea of visualized learning and address doubts
-				comprehensively. This progressive approach customizes instructions to cater to the unique needs and
-				passions of every student, resulting in heightened engagement and elevated levels of achievement.
-			</p>
-		</div>
-	</div>
-	<div class="extra">
-		<p>We're increasing this data every year</p>
-		<div class="smbox">
-			<span>
-				<center>
-					<div class="data">154</div>
-					<div class="det">Enrolled Students</div>
-				</center>
-			</span>
-			<span>
-				<center>
-					<div class="data">62</div>
-					<div class="det">Total Courses</div>
-				</center>
-			</span>
-			<span>
-				<center>
-					<div class="data">56</div>
-					<div class="det">Placed Students</div>
-				</center>
-			</span>
-			<span>
-				<center>
-					<div class="data">27</div>
-					<div class="det">Total Projects</div>
-				</center>
-			</span>
-		</div>
-	</div>
+	<style>
+    .article-content {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-width: 100%;
+    }
+
+    p {
+        margin: 0; /* Remove default paragraph margins */
+        word-wrap: break-word; /* Wrap long words to the next line */
+        overflow-wrap: break-word; /* Control word wrapping for long words */
+    }
+</style>
+
+<div class="article-content">
+    <p>
+        This initiative, led by the students of Jamia Hamdard, aims to enhance the education system. Making contributions to society involves enabling individuals of all ages to comprehend and visualize concepts effectively. Our overarching objective is to empower students to achieve their full potential. To accomplish this, we must wholeheartedly embrace the idea of visualized learning and address doubts comprehensively. This progressive approach customizes instructions to cater to the unique needs and passions of every student, resulting in heightened engagement and elevated levels of achievement.
+    </p>
+</div>
+
+		
+<div class="extra" style="text-align: center;">
+	<p style="font-size: 2rem; word-wrap: break-word;">
+		We're increasing this data every year
+	</p>
+	
+    <div class="smbox" style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <span style="text-align: center;">
+            <div class="data" style="font-size: 2rem;">154</div>
+            <div class="det" style="font-size: 1.5rem;">Enrolled Students</div>
+        </span>
+        <span style="text-align: center;">
+            <div class="data" style="font-size: 2rem;">62</div>
+            <div class="det" style="font-size: 1.5rem;">Total Courses</div>
+        </span>
+        <span style="text-align: center;">
+            <div class="data" style="font-size: 2rem;">56</div>
+            <div class="det" style="font-size: 1.5rem;">Placed Students</div>
+        </span>
+        <span style="text-align: center;">
+            <div class="data" style="font-size: 2rem;">27</div>
+            <div class="det" style="font-size: 1.5rem;">Total Projects</div>
+        </span>
+    </div>
+</div>
+
 
 	<!-- Reviews by Students -->
 	<div id="makeitfull">
@@ -233,10 +294,11 @@
 	</div>
 	<div class="review">
 		<div class="diffSection" id="review_section">
+			<br>
 			<center>
-				<p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the People Say
-					About Us?</p>
+				<p style="font-size: rem; padding: 1rem; padding-bottom: 1rem; color: #2E3D49;">What the People Say About Us?</p>
 			</center>
+			
 		</div>
 		<div class="rev-container">
 			<div class="rev-card">
@@ -319,8 +381,9 @@
 	<!-- CONTACT US -->
 	<div class="diffSection" id="contactus_section">
 		<center>
-			<p style="font-size: 50px; padding: 100px">Contact Us</p>
+			<p style="font-size: 20px; padding: 50px">Contact Us</p>
 		</center>
+		<br>
 		<div class="csec"></div>
 		<div class="back-contact">
 			<div class="cc">
